@@ -19,21 +19,21 @@
     padding: 2rem;
   border-radius: 8px;
   width: 320px;
-    &-tittle p{
+  .form-tittle p{
          font-family: 'Exile-Regular', sans-serif;
         font-size:  3rem;
         width: 100%;
         color: #ffb7c5;
         margin: 0 0 1rem 0;
     }
-    &-moon{
+  .form-moon{
   font-size: 4rem; /* Tamaño del emoji */
   animation: moonGlow 2s ease-in-out infinite;
   text-shadow: 0 0 10px rgba(255, 230, 150, 0.4),
                0 0 20px rgba(255, 230, 150, 0.5),
                0 0 30px rgba(255, 230, 150, 0.6);
         }
-    &-control{
+    .form-control{
         background-color: rgba(255, 255, 255, 0);
         border-color: white;
         border-radius: 5px;
