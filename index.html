@@ -6,50 +6,54 @@
   <link rel="stylesheet" href="./login.css">
 </head>
 <body>
-  
-  <form>
-  <div class="form">
+
   <video autoplay loop muted class="background-video">
     <source src="./2019dab65399699bfcfe1b771c8b1f38.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
   </video>
-  <div class="form-tittle">
-    <div class='form-moon'>🌕</div>
-    <p>Login</p>
-    
+
+  <div class="container">
+    <form class="form">
+
+      <div class="form-tittle">
+        <div class='form-moon'>🌕</div>
+        <p>Login</p>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Email address" />
+      </div>
+
+      <div class="form-group">
+        <input type="password" id="password" placeholder="Password" />
+      </div>
+
+      <div class="form-options">
+        <label class="checkbox">
+          <input type="checkbox" checked />
+          Remember me
+        </label>
+        <a href="#" class="forgot">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="sign-in-button">SIGN IN</button>
+
+      <div class="register">
+        Not a member? <a href="#">Register</a>
+      </div>
+
+      <div class="social-login">
+        <span>or sign up with:</span>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f">F</i>
+          <i class="fab fa-google">G</i>
+          <i class="fab fa-twitter">X</i>
+          <i class="fab fa-github">GH</i>
+        </div>
+      </div>
+
+    </form>
   </div>
-        <div class="form-group">
-          <input type="email" id="email" placeholder="Email address" />
-        </div>
-
-        <div class="form-group">
-          <input type="password" id="password" placeholder="Password" />
-        </div>
-
-        <div class="form-options">
-          <label class="checkbox">
-            <input type="checkbox" defaultChecked />
-            Remember me
-          </label>
-          <a href="#" class="forgot">Forgot password?</a>
-        </div>
-
-        <button type="submit" class="sign-in-button">SIGN IN</button>
-
-        <div class="register">
-          Not a member? <a href="#">Register</a>
-        </div>
-
-        <div class="social-login">
-          <span>or sign up with:</span>
-          <div class="social-icons">
-            <i class="fab fa-facebook-f">i</i>
-            <i class="fab fa-google">i</i>
-            <i class="fab fa-twitter">i</i>
-            <i class="fab fa-github">i</i>
-          </div>
-        </div>
-    </div>
-</form>
 
 </body>
 </html>
