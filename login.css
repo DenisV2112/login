@@ -4,43 +4,54 @@
   font-weight: normal;
   font-style: normal;
 }
-.form{
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.container {
   display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    justify-items: center;
-    align-content: center;
-    background: rgba(255, 255, 255, 0.164);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(50%);
-    padding: 2rem;
-  border-radius: 8px;
-  width: 320px;}
-  .form-tittle p{
-         font-family: 'Exile-Regular', sans-serif;
-        font-size:  3rem;
-        width: 100%;
-        color: #ffb7c5;
-        margin: 0 0 1rem 0;
-    }
-  .form-moon{
-  font-size: 4rem; /* Tamaño del emoji */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  width: 320px;
+}
+
+.form-tittle p {
+  font-family: 'Exile-Regular', sans-serif;
+  font-size: 3rem;
+  color: #ffb7c5;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.form-moon {
+  font-size: 4rem;
   animation: moonGlow 2s ease-in-out infinite;
   text-shadow: 0 0 10px rgba(255, 230, 150, 0.4),
                0 0 20px rgba(255, 230, 150, 0.5),
                0 0 30px rgba(255, 230, 150, 0.6);
-        }
-  .form-control{
-        background-color: rgba(255, 255, 255, 0);
-        border-color: white;
-        border-radius: 5px;
-        height: 1.5rem;
-        margin: 0.5rem;
-    }
-    
+}
 @keyframes moonGlow {
   0%, 100% {
     text-shadow: 0 0 10px rgba(255, 230, 150, 0.4),
@@ -54,40 +65,18 @@
                  0 0 40px rgba(255, 230, 150, 0.8);
     transform: scale(1.05);
   }
-} 
-
-
-.form video {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
 }
-.login-container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 .form-group {
   margin-bottom: 1rem;
-  width: 90%;
-}
-
-label {
-  display: block;
-  margin-bottom: 0.3rem;
-  color: #ffffff;
-  font-size: 0.9rem;
+  width: 100%;
 }
 
 input[type="email"],
 input[type="password"] {
   width: 100%;
   padding: 0.5rem;
-  background-color: #fffdfd00;
+  background-color: transparent;
   border: 1px solid white;
   border-radius: 4px;
   color: white;
@@ -100,24 +89,21 @@ input[type="password"]:focus {
 }
 
 .form-options {
-     display: flex
-;
-    align-items: center;
-    font-size: 0.85rem;
-    margin-bottom: 1rem;
-    color: white;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  color: white;
 }
 
 .checkbox input {
   margin-right: 0.5rem;
-  
 }
 
 .forgot {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
 }
 
@@ -141,10 +127,10 @@ input[type="password"]:focus {
 }
 
 .register {
-    color: white;
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.9rem;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
 }
 
 .register a {
@@ -158,9 +144,9 @@ input[type="password"]:focus {
 
 .social-login {
   text-align: center;
-  margin: 1rem 0 1rem 0;
+  margin-top: 1rem;
   font-size: 0.85rem;
-  color: #ffffff;
+  color: white;
 }
 
 .social-icons {
@@ -172,19 +158,10 @@ input[type="password"]:focus {
 
 .social-icons i {
   cursor: pointer;
-  color: #ffffff;
+  color: white;
   font-size: 1rem;
 }
 
 .social-icons i:hover {
-  color: #60a5fa
-}
-.background-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1;
+  color: #60a5fa;
 }
